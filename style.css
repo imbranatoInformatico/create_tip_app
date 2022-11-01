@@ -1,5 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+}
+
+ body {
+    font-family: 'Roboto', sans-serif;
+    background-color: hsl(185, 41%, 84%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+#wrap_app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#wrap_app .wrap_logo {
+    padding-bottom: 50px;
+}
+
+.wrap_tip_calculator {
+    background-color: hsl(0, 0%, 100%);
+    height: 380px;
+    width: 700px;
+    border-radius: 15px;
+    display: flex;
+}
+.wrap_calc {
+    height: auto;
+    width: 50%;
+    margin:15px;
+}
+.wrap_result {
+    background-color: hsl(183, 100%, 15%);
+    height: auto;
+    width: 50%;
+    margin:15px;
+    border-radius: 15px;
+}
+
+/*Responsive*/
+
+@media  screen and (max-width: 375px) {
+  /*   body {
+        background-color: yellow;
+    } */
+}
+
+@media  screen and (min-width: 376px) and (max-width: 1440px) {
+  
 }
