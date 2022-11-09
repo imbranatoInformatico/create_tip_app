@@ -8,21 +8,31 @@
     <title>Tip calculator app</title>
 </head>
 <body>
-    <div id="wrap_app">
+    <main class="wrap_app">
         <div class="wrap_logo">
             <img src="images/logo.svg" alt="">
         </div>
         <div class="wrap_tip_calculator">
             <div class="wrap_calc">
-                <label for="">Bill</label>
-                <input type="number">
-
+                <div class="rowInertNumber">
+                    <label for="">Bill</label>
+                    <input class="billInput" type="number">
+                </div>
+                <label for="">Select Tip %</label>
+                <div class="rowSelectTip">
+                    <button class="btn_tip">5%</button>
+                    <button class="btn_tip">10%</button>
+                    <button class="btn_tip">15%</button>
+                    <button class="btn_tip">25%</button>
+                    <button class="btn_tip">50%</button>
+                    <input class="customInput btn_tip" type="number" placeholder=""></input>
+                </div>                
             </div>
             <div class="wrap_result">
 
             </div>
         </div>
-    </div>  
+    </main>  
     <script src="script.js"></script>
 </body>
 </html>
