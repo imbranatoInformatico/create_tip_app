@@ -33,11 +33,19 @@ button:hover {
 
 .wrap_tip_calculator {
     background-color: hsl(0, 0%, 100%);
-    height: 380px;
-    width: 700px;
+    height: 23.75rem;
+    width: 43.75rem;
     border-radius: 15px;
     display: flex;
 }
+
+.wrap_calc {
+    height: auto;
+    width: 50%;
+    margin-left:25px;
+    margin-right:25px;
+}
+
 
 .wrap_app label {
     display: block;
@@ -61,12 +69,8 @@ input[class=billInput]{
     text-align: right;
 }
 
-.wrap_calc {
-    height: auto;
-    width: 50%;
-    margin-left:25px;
-    margin-right:25px;
-}
+
+
 
 .wrap_calc::before {
     content: '$';
@@ -95,7 +99,7 @@ input[class=billInput]{
     padding-right: 10px;
     border: none;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 16px;
 
 }
 
@@ -106,6 +110,30 @@ input[class=billInput]{
     text-align: right;
 } 
 
+.rowPeople {
+    margin-top: 35px;
+}
+
+.rowPeople::before {
+    font-family: "FontAwesome";
+    content: "\f007";
+    color: hsl(184, 14%, 56%);
+    font-size: 20px;
+    position: relative;
+    top: 58px;
+    left: 10px;
+}
+
+input[class=peopleInput]{
+    width: 100%;
+    height: 35px;
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    border-radius: 5px;
+    color: hsl(184, 14%, 56%);
+    font-size: 20px;
+    text-align: right;
+}
 
 
 .wrap_result {
@@ -113,16 +141,52 @@ input[class=billInput]{
     height: auto;
     width: 50%;
     margin:15px;
+    padding-left:25px;
+    padding-right:25px;  
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.rowTipAmount {
+    display: flex;
+    justify-content: space-between;
+}
+.title h3 {
+    font-size: 15px;
+    color: hsl(0, 0%, 100%);
+}
+.title p {
+    font-size: 11px;
+    color: hsl(184, 14%, 56%);
 }
 
+.tipAmount h3 {
+    color: hsl(185, 41%, 84%);
+    font-size: 30px;
+}
+
+.btn_reset {
+    background-color: hsl(186, 14%, 43%);
+    border: none;
+    height: 35px;
+    border-radius: 5px;
+    color: hsl(183, 100%, 15%);
+    font-weight: bold;
+}
+
+.btn_reset:hover {
+    color: hsl(183, 100%, 15%);
+}
 /*Responsive*/
 
 @media  screen and (max-width: 375px) {
-  /*   body {
-        background-color: yellow;
-    } */
-}
+    .wrap_tip_calculator {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
 
 @media  screen and (min-width: 376px) and (max-width: 1440px) {
   
