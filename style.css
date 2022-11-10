@@ -25,6 +25,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .wrap_app .wrap_logo {
@@ -100,7 +101,6 @@ input[class=billInput]{
     border: none;
     border-radius: 5px;
     font-size: 16px;
-
 }
 
 .customInput {
@@ -186,8 +186,34 @@ input[class=peopleInput]{
         flex-direction: column;
         height: auto;
         align-items: center;
+        border-radius: 25px;
+        padding-bottom: 25px;
+        
+
     }
 
-@media  screen and (min-width: 376px) and (max-width: 1440px) {
-  
+    .btn_tip {
+        width: calc(100% / 3);
+        height: 50px;
+    }
+
+    .btn_tip:hover {
+        background-color: hsl(185, 41%, 84%);
+    }
+
+    .rowPeople {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .wrap_result {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .rowTipAmount {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
 }
+
