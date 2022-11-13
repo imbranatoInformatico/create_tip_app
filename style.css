@@ -35,7 +35,7 @@ button:hover {
 .wrap_tip_calculator {
     background-color: hsl(0, 0%, 100%);
     height: 23.75rem;
-    width: 43.75rem;
+   /* width: 43.75rem; */
     border-radius: 15px;
     display: flex;
 }
